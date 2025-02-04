@@ -28,10 +28,10 @@ span{
   color: #0ee3e9;
 }
 .container-2{
-  background: transparent;
+  background: black;
   border: 2px solid black;
-  width: 25vw;
-  height: 58vh;
+  width: auto;
+  height: 52vh;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -40,6 +40,7 @@ span{
   top: 16rem;
   backdrop-filter: blur(4px);
   outline: none;
+  border: 2px solid white;
 
 }
 form{
@@ -70,14 +71,21 @@ form{
 .sub-btn:hover{
   background: rgba(255, 255, 255, 0.431);
 }
+.container-3{
+    width: 100%;
+    height: 155px;
+    display: flex;
+    position: absolute;
+    top: 120px;
+    align-items: center;
+    justify-content: center;
+}
 .head{
     display: flex;
     align-items: center;
     justify-content: center;
     border: 7px solid black;
     position: absolute;
-    top: 88px;
-    left: 751px;
     width: 11rem;
     height: 12rem;
     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
@@ -234,7 +242,6 @@ form{
     width: 60%;
     height: 74%;
     background: #3D1110;
-    /* -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0); */
     clip-path: polygon(50% 88%, 19% 0%, 77% 0);
     border-radius: 131%;
     top: 146%;
@@ -326,6 +333,25 @@ form{
     z-index: 3;
     border-radius: 10%  90%  50%  50% / 40% 80% 40% 40%;
   }
+  .hands{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hide-hands{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 191px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   .body-container{
     display: flex;
     align-items: center;
@@ -345,83 +371,72 @@ form{
   }
   .left-hand{
     background: black;
+    margin-right: 5rem;
     width: 39px;
     height: 47px;
-    position: absolute;
-    top: 15.5rem;
-    left: 44rem;
     z-index: 1;
-    border-radius: 50%  50%  50%  50% / 40%  50% 50% 40%;
+    border-radius: 50% 50% 50% 50% / 40% 50% 50% 40%;
+    border: 1px solid rgb(58, 57, 57);
   }
   .left-hand-hide-active{
     width: 46px;
+    margin-right: 75px;
     height: 174px;
     background: black;
-    position: absolute;
-    top: 123px;
-    left: 594px;
     z-index: 1;
     rotate: 28deg;
     border-radius: 31px;
     transition: all 0.5s ease-in-out;
+    border: 1px solid rgb(58, 57, 57);
   }
   .right-hand{
     background: black;
+    margin-left: 6rem;
     width: 39px;
     height: 47px;
-    position: absolute;
-    top: 15.5rem;
-    right: 43.5rem;
     z-index: 1;
-    border-radius: 50%  50%  50%  50% / 40%  50% 50% 40%;
+    border-radius: 50% 50% 50% 50% / 40% 50% 50% 40%;
+    border: 1px solid rgb(58, 57, 57);
   }
   .right-hand-hide-active{
     width: 46px;
     height: 174px;
     background: black;
-    position: absolute;
-    top: 122px;
-    right: 609px;
     z-index: 1;
     rotate: -27deg;
     border-radius: 31px;
     transition: all 0.5s ease-in-out;
+    border: 1px solid rgb(58, 57, 57);
   }
   .feet{
     display: flex;
-      width: 15rem;
-      height: 2rem;
-      position: absolute;
-      top: 42.8rem;
-      justify-content: space-between;
-      align-items: center;
+    width: 15rem;
+    height: 2rem;
+    position: absolute;
+    top: 34.8rem;
+    justify-content: space-between;
+    align-items: center;
   }
   .left-foot{
     display: flex;
-        width: 49px;
-        height: 53px;
-        background: black;
-        border-radius: 50% 43% 28% 24% / 42% 50% 50% 40%;
-        align-items: center;
-        justify-content: space-between;
-
-  }
-  .left-foot{
     width: 49px;
-    height: 53px;
+    height: 69px;
     background: black;
     border-radius: 50% 43% 28% 24% / 42% 50% 50% 40%;
-
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(58, 57, 57);
   }
+ 
   .finger-box-left{
     display: flex;
-        width: 43px;
-        height: 18px;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        bottom: 17px;
-        left: 3px;
+    width: 43px;
+    height: 18px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    left: 3px;
   }
   .fingers{
     position: relative;
@@ -441,10 +456,10 @@ form{
   }
   .right-foot{
     width: 49px;
-    height: 53px;
+    height: 69px;
     background: black;
     border-radius: 50% 43% 28% 24% / 42% 50% 50% 40%;
-
+    border: 1px solid rgb(58, 57, 57);
   }
   .finger-box-right{
     display: flex;
@@ -472,3 +487,4 @@ form{
     top: 17px;
     border-radius: 50% 50% 50% 50% / 40% 50% 50% 40%;
   }
+
