@@ -25,7 +25,7 @@ Installation
 
 Clone the repository:
 
-git clone [https://github.com/yourusername/panda-login-page.git](https://github.com/IR-Designing/panda-login-page/edit/main/README.md)
+Link: https://ir-designing.github.io/panda-login-page/?#
 
 Navigate to the project folder:
 
